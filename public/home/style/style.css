@@ -1,3 +1,22 @@
 body {
     background-color: black;
+    overflow: hidden;
+}
+#sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: rgb(10,10,10);
+    max-width: 200px;
+}
+#main_content {
+    height: 100%;
+    width: 100%;
+}
+#page {
+    height: 100%;
+    flex-grow: 1;
+    overflow: scroll;
+    max-width: 50%;
+    margin-left: 2%;
+    gap:3%
 }

@@ -1,8 +1,9 @@
 <head>
-    <title>Scriptified Dashboard</title>
+    <title>Scriptify Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/xel/0.28.16/xel.min.js" integrity="sha512-dNoE2vA3zIw7ESMncUosCK/Hh4hdtQYNF4qDxi2+9QXasxhqjn/Dhh7KOeW5sq4BGcybpixbaOYdkR6Lpx4ZfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xel/0.28.16/themes/adwaita-dark.min.css" integrity="sha512-Spgalz0zx6S7iQY/7vwpsabw/DccEF8X0foFQP95f4f8Tc0y9TDapI24Byn1haCuNShwS46qqXVS0z1iMA9iFg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -11,5 +12,67 @@
     <script type="module" src="./client.js"></script>
 </head>
 <body>
+    <x-box id="main_content">
+        <sidebar id="sidebar">
 
+        </sidebar>
+        <div id="page">
+            <article>
+                <h2>Welcome to Scriptify Beta</h2>
+                <h4>Start Scriptifying your game today!</h4>
+                <x-card>
+                    <main>
+                        <h3>Download Scriptify</h3>
+                        <x-card>
+                            <main>
+                                <h4 style="margin-top: 5px;">Windows Instructions</h4>
+                                <p>To install, click the button below, unzip the file and run the .exe.</p>
+                                <x-box style="gap:10px">
+                                    <x-button>
+                                        <i class="bi bi-microsoft"></i>
+                                        <x-label style="margin-left: 8px;">Download for Windows</x-label>
+                                    </x-button>
+
+                                </x-box>
+                            </main>
+                        </x-card>
+                        <x-card>
+                            <main>
+                                <h4 style="margin-top: 5px;">Android Instructions</h4>
+                                <x-box style="gap:10px">
+                                    <x-button disabled>
+                                        <i class="bi bi-android"></i>
+                                        <x-label style="margin-left: 8px;">Download for Android</x-label>
+                                    </x-button>
+                                </x-box>
+                            </main>
+                        </x-card>
+                        <x-card>
+                            <main>
+                                <h4 style="margin-top: 5px;">IOS Instructions</h4>
+
+                                <x-button disabled>
+                                    <i class="bi bi-apple"></i>
+                                    <x-label style="margin-left: 8px;">Download for IOS</x-label>
+                                </x-button>
+                            </main>
+                        </x-card>
+                          
+                    </main>
+                </x-card>
+                <x-card>
+                    <main>
+                        <h3>HWID Reset</h3>
+                        
+                    </main>
+                </x-card>
+                <x-card>
+                    <main>
+                        <h3>Find us on</h3>
+                        
+                    </main>
+                </x-card>
+            </article>
+        </div>
+    </x-box> 
 </body>
